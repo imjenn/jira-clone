@@ -1,0 +1,16 @@
+.board_container {
+    display: flex;
+    /* min-width: 80%; */
+    margin-left: clamp(300px, 20vw, 8%);
+    padding: 20px;
+}
+
+.board_container p {
+    font-size: 11pt;
+    color: #6c798e;
+}
+
+.board_container h1 {
+    font-size: 16pt;
+    font-weight: 500;
+}
