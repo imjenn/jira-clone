@@ -13,4 +13,46 @@
 .board_container h1 {
     font-size: 16pt;
     font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.issues_filter input {
+    border: 2px solid #dee1e6;
+    background-color: #fafbfc;
+    border-radius: 3px;
+    height: 40px;
+    width: 150px;
+    position: relative;
+    /* transition: 0.25s ease-in-out; */
+    transition-duration: 0.4s;
+	-moz-transition-duration: 0.4s;
+	-webkit-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+}
+
+.issues_filter input::placeholder {
+    opacity: 0;
+    transition: 0.25s ease-in-out;
+}
+
+.issues_filter input:hover {
+    background-color: #dee1e6;
+}
+
+.issues_filter input:focus {
+    width: 270px;
+    transition: 0.25s;
+    background-color: #fff;
+}
+
+.issues_filter input:focus::placeholder {
+    opacity: 1;
+}
+
+.search_icon {
+    position: absolute;
+    margin-left: -25px;
+    margin-top: 10px;
+    color: #5e6c84;
+    height: 18px !important;
 }

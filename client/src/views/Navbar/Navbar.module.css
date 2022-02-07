@@ -12,6 +12,14 @@ header {
 .waffle_menu {
     align-self: center;
     margin: 0 15px;
+    padding: 5px;
+}
+
+.waffle_menu:hover {
+    cursor: pointer;
+    background-color: #e6effc;
+    border-radius: 50%;
+    color: #0355cd;
 }
 
 nav {
@@ -43,6 +51,11 @@ nav ul li {
     padding: 5px;
 }
 
+.nav_arrow {
+    height: 20px !important;
+    color: #a4acba;
+}
+
 nav ul li:hover {
     background-color: #e6effc;
     color: #0355cd;
@@ -71,6 +84,7 @@ nav ul li:hover {
 }
 
 .right_nav input {
+    position: relative;
     border: 2px solid lightgrey;
     border-radius: 3px;
     padding: 7px;
@@ -78,6 +92,13 @@ nav ul li:hover {
     height: 13px;
 }
 
-.cog_icon {
-    vertical-align: center;
+.nav_icon {
+    padding: 5px;
+}
+
+.nav_icon:hover {
+    cursor: pointer;
+    background-color: #e6effc;
+    border-radius: 50%;
+    color: #0355cd;
 }

@@ -2,7 +2,6 @@ import React from 'react';
 import styles from './Navbar.module.css';
 import logo from './jira.png';
 import { AppsOutlined, KeyboardArrowDown, Settings, Notifications, Help } from '@material-ui/icons'
-import LeftNav from '../LeftNav/LeftNav';
 
 const Navbar = () => {
     return (
@@ -12,25 +11,25 @@ const Navbar = () => {
                 <img src={logo} alt="Jira logo" />
                 <ul>
                     <li>
-                        Your Work <KeyboardArrowDown />
+                        Your Work <KeyboardArrowDown className={styles.nav_arrow}/>
                     </li>
                     <li>
-                        Projects <KeyboardArrowDown />
+                        Projects <KeyboardArrowDown className={styles.nav_arrow} />
                     </li>
                     <li>
-                        Filters <KeyboardArrowDown />
+                        Filters <KeyboardArrowDown className={styles.nav_arrow} />
                     </li>
                     <li>
-                        Dashboards <KeyboardArrowDown />
+                        Dashboards <KeyboardArrowDown className={styles.nav_arrow} />
                     </li>
                     <li>
-                        People <KeyboardArrowDown />
+                        People <KeyboardArrowDown className={styles.nav_arrow} />
                     </li>
                     <li>
-                        Plans <KeyboardArrowDown />
+                        Plans <KeyboardArrowDown className={styles.nav_arrow} />
                     </li>
                     <li>
-                        Apps <KeyboardArrowDown />
+                        Apps <KeyboardArrowDown className={styles.nav_arrow} />
                     </li>
                     <li>
                         <a className={styles.btn} href="">Create</a>
@@ -39,9 +38,9 @@ const Navbar = () => {
             </nav>
             <div className={styles.right_nav}>
                 <input type="text" placeholder="Search" />
-                <Notifications />
-                <Help />
-                <Settings className={styles.cog_icon}/>
+                <Notifications className={styles.nav_icon}/>
+                <Help className={styles.nav_icon}/>
+                <Settings className={styles.nav_icon}/>
             </div>
             {/* <LeftNav /> */}
         </header>

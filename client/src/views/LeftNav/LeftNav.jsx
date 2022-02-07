@@ -1,7 +1,7 @@
 import React from 'react';
 import batman from './batman.png';
 import styles from './LeftNav.module.css';
-import { KeyboardArrowLeft, Equalizer, ViewColumnOutlined, Code } from '@material-ui/icons';
+import { KeyboardArrowLeft, Equalizer, ViewColumnOutlined, Code, DescriptionOutlined, AddBoxOutlined, Settings } from '@material-ui/icons';
 import { Link } from 'react-router-dom';
 
 const LeftNav = () => {
@@ -27,7 +27,7 @@ const LeftNav = () => {
                 </li>
                 <li>
                     <ViewColumnOutlined className={styles.left_nav_icon} />
-                    <Link to="/project/board">Board</Link>
+                    <Link className={styles.left_nav_link} to="/project/board">Board</Link>
                 </li>
             </ul>
             <h2>DEVELOPMENT</h2>
@@ -38,6 +38,20 @@ const LeftNav = () => {
                 </li>
             </ul>
             <hr />
+            <ul>
+                <li>
+                    <DescriptionOutlined className={styles.left_nav_icon} />
+                    Project pages
+                </li>
+                <li>
+                    <AddBoxOutlined className={styles.left_nav_icon} />
+                    Add shortcut
+                </li>
+                <li>
+                    <Settings  className={styles.left_nav_icon}/>
+                    Project Settings
+                </li>
+            </ul>
             <div className={styles.left_nav_footer}>
                 You're in a team-managed project<br/>
                 <a href="">Learn more</a>
