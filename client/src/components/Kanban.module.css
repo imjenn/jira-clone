@@ -1,0 +1,58 @@
+.create_issue {
+    display: flex;
+    cursor: pointer;
+    font-size: 11pt;
+    font-weight: 500;
+    color: #42526e;
+    padding: 10px 5px;
+}
+
+.create_icon {
+    height: 20px !important;
+    margin-top: -2px;
+}
+
+.create_issue:hover {
+    background-color: #d3d4d7;
+}
+
+.task_form {
+    padding: 10px;
+    width: 15%;
+}
+
+.error_card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    padding: 20px 10px 10px 10px;
+    width: clamp(500px, 60vw, 500px)
+    /* font-size: 12pt; */
+}
+
+.error_message {
+    display: flex;
+    font-size: 11pt;
+    line-height: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.error_message strong {
+    margin-right: 160px;
+}
+
+.error_card p {
+    margin-left: 40px;
+}
+
+.warning_icon {
+    color: #ffab00;
+    margin-right: 15px;
+}
+
+.close_icon {
+    height: 12pt !important;
+    cursor: pointer;
+}

@@ -1,9 +1,10 @@
 // import logo from './logo.svg';
 import './App.css';
-import { Switch, Route, BrowserRouter } from 'react-router-dom';
+import { Switch, Route, BrowserRouter, useLocation } from 'react-router-dom';
 import Navbar from './views/Navbar/Navbar';
 import LeftNav from './views/LeftNav/LeftNav';
 import Board from './components/Board';
+import NotFound from './views/404/NotFound';
 
 function App() {
   return (
@@ -11,9 +12,12 @@ function App() {
       <Navbar />
       <LeftNav />
       <Switch>
-        <Route path="/project/board">
+        <Route exact path="/project/board">
           <Board />
         </Route>
+        {/* <Route exact path="*">
+          <NotFound />
+        </Route> */}
       </Switch>
     </BrowserRouter>
   );

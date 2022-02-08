@@ -1,6 +1,9 @@
 .board_container {
     display: flex;
     /* min-width: 80%; */
+    flex-direction: column;
+    height: 100vh;
+    gap: 5%;
     margin-left: clamp(300px, 20vw, 8%);
     padding: 20px;
 }

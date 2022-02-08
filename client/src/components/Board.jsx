@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Board.module.css';
 import { Search } from '@material-ui/icons';
+import Kanban from './Kanban';
 
 const Board = () => {
     return (
@@ -12,6 +13,9 @@ const Board = () => {
                     <input type="search" placeholder="Filter issues"/>
                     <Search className={styles.search_icon} />
                 </div>
+            </div>
+            <div>
+                <Kanban />
             </div>
         </div>
     )
