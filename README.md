@@ -18,3 +18,4 @@ Back End:
 * Cors
 
 
+<img width="1782" alt="jira-clone" src="https://user-images.githubusercontent.com/90587567/153355022-771ef0bd-3469-4bdb-ae70-937e1f24f3dc.png">
