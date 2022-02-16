@@ -4,6 +4,7 @@ import styles from './Kanban.module.css';
 import { DragDropContext } from 'react-beautiful-dnd';
 import DropContainer from './DropContainer';
 import { Add, Warning, Close } from '@material-ui/icons';
+import Detail from './Detail';
 import DraggableItem from './DraggableItem';
 
 
@@ -99,19 +100,25 @@ const Kanban = (props) => {
     const createTask = (e) => {
         e.preventDefault();
         axios.post("http://localhost:8000/task/new", newTask)
-            .then(res => console.log(res))
+            .then(res => console.log(res.data))
             .catch(err => {
                 const errorResponse = err.response.data.errors;
                 console.log(errorResponse);
                 setError(true);
             })
         setError(false);
+        setTitle("");
     }
 
     // Button to input field
     const makeInput = (e) => {
         e.currentTarget.style.display = "none";
         document.getElementById("task-input").style.display = "block";
+    }
+
+    // Remove from DOM
+    const removeFromDom = (id) => {
+        setTaskCard(taskCard.filter(taskCard => taskCard._id !== id));
     }
 
     return (
@@ -129,8 +136,7 @@ const Kanban = (props) => {
                     onClick={makeInput}>
                     <Add className={styles.create_icon} /> Create issue
                 </div>
-            </form>
-            <input
+                <input
                 id={"task-input"}
                 className={styles.task_form}
                 style={{ display: "none" }}
@@ -140,6 +146,7 @@ const Kanban = (props) => {
                 value={title}
                 onKeyPress={(e) => e.key === "Enter" ? createTask() : null}
             />
+            </form>
             {
                 error ?
                     <div className={styles.error_card}>
@@ -155,6 +162,7 @@ const Kanban = (props) => {
                     </div>
                 : null
             }
+            <Detail />
         </div>
     )
 }
