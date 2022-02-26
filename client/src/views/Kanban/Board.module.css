@@ -17,6 +17,10 @@
     margin-bottom: 30px;
 }
 
+.search_section {
+    display: flex;
+}
+
 .issues_filter input {
     border: 2px solid #dee1e6;
     background-color: #fafbfc;
@@ -55,4 +59,26 @@
     margin-top: 10px;
     color: #5e6c84;
     height: 18px !important;
+}
+
+.yoda_icon {
+    margin-left: 13px;
+    width: 35px !important;
+    height: 35px !important;
+    align-self: center;
+    background-color: green !important;
+    cursor: pointer;
+}
+
+.add_user {
+    margin-left: 13px;
+    width: 35px !important;
+    height: 35px !important;
+    align-self: center;
+    cursor: pointer;
+}
+
+.search_users {
+    display: flex;
+    justify-content: space-around;
 }

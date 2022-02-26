@@ -13,6 +13,7 @@ header {
     align-self: center;
     margin: 0 15px;
     padding: 5px;
+    color: #334563;
 }
 
 .waffle_menu:hover {
@@ -49,6 +50,7 @@ nav ul li {
     color: #334563;
     /* margin: 10px 5px 5px 5px; */
     padding: 5px;
+    font-weight: 600;
 }
 
 .nav_arrow {
@@ -78,7 +80,7 @@ nav ul li:hover {
 
 .right_nav {
     display: flex;
-    min-width: 20%;
+    min-width: 22%;
     align-items: center;
     justify-content: space-around;
 }
@@ -94,6 +96,7 @@ nav ul li:hover {
 
 .nav_icon {
     padding: 5px;
+    color: #334563;
 }
 
 .nav_icon:hover {
@@ -101,4 +104,12 @@ nav ul li:hover {
     background-color: #e6effc;
     border-radius: 50%;
     color: #0355cd;
+}
+
+.nav_icon_yoda {
+    cursor: pointer;
+    font-size: 10pt !important;
+    width: 30px !important;
+    height: 30px !important;
+    background-color: green !important;
 }
